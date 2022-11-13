@@ -1,0 +1,65 @@
+/* .baseContainer { */
+/*   margin-top: 1em; */
+/* } */
+
+.slider {
+  display: flex;
+  justify-content: center;
+}
+.slider > .arrow {
+  align-self: center;
+}
+
+.slideSet {
+  position: relative;
+  overflow: hidden;
+}
+
+.slideSet > div {
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+.slideSet > div > * {
+  margin-bottom: 1rem;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+.indicators > * {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--overlay);
+  border-radius: 4px;
+  transition: 0.2s ease-in-out;
+}
+.indicators > .active {
+  background-color: var(--love);
+}
+.indicators > :not(.active):hover {
+  background-color: var(--highlight-high);
+}
+
+.arrow {
+  border: solid;
+  border-width: 0 4px 4px 0;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  transition: 0.2s ease-in-out;
+}
+.arrow:hover {
+  border-color: var(--love);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
