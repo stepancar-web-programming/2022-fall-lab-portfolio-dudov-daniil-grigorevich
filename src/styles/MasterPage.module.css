@@ -1,0 +1,65 @@
+.horizontalContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.horizontalContainer > div {
+  justify-content: space-between;
+  padding: 0 2em;
+}
+.horizontalContainer > div:first-child {
+  padding-left: 0;
+}
+.horizontalContainer > div:last-child {
+  padding-right: 0;
+}
+.horizontalContainer > .smallFlex {
+  flex: 2;
+}
+.horizontalContainer .niceFrames {
+  box-shadow: -40px -40px 0 -10px var(--base), -40px -40px 0 0px var(--overlay);
+}
+.horizontalContainer > .bigFlex {
+  flex: 3;
+}
+.horizontalContainer > .bigFlex > * {
+  margin-bottom: 1.2rem;
+}
+
+.skillGrid {
+  padding: 1em 0;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 80px;
+}
+.skillGrid > div {
+  display: flex;
+  align-items: center;
+}
+.skillGrid > div > :last-child {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+.skillGrid > div > :last-child > h4 {
+  margin-bottom: 0.4em;
+}
+.skillGrid img {
+  width: 160px;
+  height: 160px;
+}
+
+img {
+  width: 100%;
+}
+
+.hardChoice {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+p.myName {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--love);
+}

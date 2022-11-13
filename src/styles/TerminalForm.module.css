@@ -1,0 +1,19 @@
+.window {
+  width: 100%;
+}
+
+.topBar {
+  background-color: var(--pine);
+  height: 1.6em;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topBar > * {
+  margin: 0 0.3em;
+}
+.topBar > img {
+  width: 1.4em;
+}
